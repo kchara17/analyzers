@@ -10,7 +10,6 @@ import {NavigationDetailsPage} from "../pages/account/account";
 import {HomePage} from '../pages/home/home';
 import {TabsPage} from '../pages/tabs/tabs';
 import {BinPage} from '../pages/bin/bin';
-import {SearchPage} from '../pages/search/search';
 import {QRScannerPage} from '../pages/qrscanner/qrscanner';
 import {NFCReaderPage} from '../pages/nfcReader/nfcReader';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -24,7 +23,6 @@ import { NFC, Ndef } from '@ionic-native/nfc';
   declarations: [
     MyApp,
     HomePage,
-    SearchPage,
     AlertsPage,
     TabsPage,
     BinPage,
@@ -42,7 +40,6 @@ import { NFC, Ndef } from '@ionic-native/nfc';
   entryComponents: [
     MyApp,
     HomePage,
-    SearchPage,
     AlertsPage,
     AccountPage,
     BinPage,

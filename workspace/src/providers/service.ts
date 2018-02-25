@@ -8,6 +8,7 @@ export class Service {
   public companies: Array<any>;
   public id: string;
   public binInfo: Array<any>;
+  public rewardsInfo: Array<any>;
   constructor(public http: Http,public alertCtrl: AlertController) {}
 
   getAllCompanies(){
@@ -16,6 +17,12 @@ export class Service {
 
   getBinInfo(id:string){
     return this.http.get("http://ec2-34-216-222-53.us-west-2.compute.amazonaws.com/api/bin/readOne.php?id="+id);
+  }
+
+  getAllRewards(){
+
+    return this.http.get("http://ec2-34-216-222-53.us-west-2.compute.amazonaws.com/api/reward/readAll.php");
+
   }
 
   postProblem(problem: string){
