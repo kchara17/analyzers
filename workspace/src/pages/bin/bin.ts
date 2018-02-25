@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import {Config, NavController,NavParams,AlertController} from 'ionic-angular';
 import { Injectable } from '@angular/core';
 import {Service} from "../../providers/service";
+import { HomePage } from '../home/home';
 @Injectable()
 @Component({
   selector: 'page-bin',
@@ -43,8 +44,10 @@ showBinInformation(){
 }
 
 report(problem: string){
-  
+
   this.serv.postProblem(problem);
+  this.doAlert("Thank you!", "Your feedback has been submitted!");
+  this.navCtrl.setRoot(HomePage);
 }
 
 doAlert(title: string, message: string) {
