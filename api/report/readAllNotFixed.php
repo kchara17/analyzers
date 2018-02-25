@@ -8,7 +8,7 @@ include_once "../config/connect_db.php";
 $database = new Database();
 $db = $database->connect();
 
-$query = "SELECT reportID, b.binID binID, problem, date, type, latitude, longitude, address, type FROM report r JOIN bin b on r.binID = b.binID";
+$query = "SELECT reportID, b.binID binID, problem, date, type, latitude, longitude, address, type FROM report r JOIN bin b on r.binID = b.binID WHERE fixed = 0";
 $stmt = $db->prepare($query);
 $stmt->execute();
 $num = $stmt->rowCount();
