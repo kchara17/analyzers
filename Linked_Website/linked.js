@@ -16,11 +16,13 @@ function removeReport(p){
 
 function showMap(){
   document.getElementById('reports').style.display = "none";
+  document.getElementById('statistics').style.display = "none";
   document.getElementById('map').style.display = "block";
 }
 
 function showReports(){
   document.getElementById('reports').style.display = "block";
+  document.getElementById('statistics').style.display = "none";
   document.getElementById('map').style.display = "none";
 }
 
