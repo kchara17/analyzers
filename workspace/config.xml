@@ -88,6 +88,7 @@
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
     <plugin name="cordova-plugin-qrscanner" spec="~2.5.0" />
+    <plugin name="phonegap-nfc" spec="^0.7.1" />
     <engine name="browser" spec="~5.0.3" />
     <engine name="android" spec="~6.3.0" />
 </widget>

@@ -21,12 +21,11 @@ export class Service {
   postProblem(problem: string){
     let headers = new Headers( { 'Content-Type' : 'application/json' }); 
     let options = new RequestOptions({ headers: headers }); 
-    this.http.post('ec2-34-216-222-53.us-west-2.compute.amazonaws.com/api/report/add.php', 
+    this.http.post('http://ec2-34-216-222-53.us-west-2.compute.amazonaws.com/api/report/add.php', 
         { 
-            binID : this.id,
-            userID : "1",
-            problem : problem,
-            date : new Date()
+            "binID" : this.id,
+            "userID" : "1",
+            "problem" : problem
         }).subscribe(data => console.log(data)
             , error => {
                 console.log(error.json());

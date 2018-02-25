@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 import {Config, NavController,AlertController} from 'ionic-angular';
 import { Injectable } from '@angular/core';
-import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 import { QRScannerPage } from '../qrscanner/qrscanner';
+import { NFCReaderPage } from '../nfcReader/nfcReader';
 import {Service} from "../../providers/service";
 @Injectable()
 @Component({
@@ -15,7 +15,6 @@ export class HomePage {
   constructor(public navCtrl: NavController,
               public config: Config,
               public alertCtrl: AlertController,
-              private qrScanner: QRScanner,
               public serv: Service
             ) {
 
@@ -25,10 +24,13 @@ export class HomePage {
 
   
 readNFC(){
-  this.navCtrl.push(QRScannerPage);
+  this.navCtrl.push(NFCReaderPage);
   this.id = this.serv.id;
 }
 
-  
+readQRcode(){
+  this.navCtrl.push(QRScannerPage);
+  this.id = this.serv.id;
+}  
 
 }

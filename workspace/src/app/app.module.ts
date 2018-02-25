@@ -12,6 +12,7 @@ import {TabsPage} from '../pages/tabs/tabs';
 import {BinPage} from '../pages/bin/bin';
 import {SearchPage} from '../pages/search/search';
 import {QRScannerPage} from '../pages/qrscanner/qrscanner';
+import {NFCReaderPage} from '../pages/nfcReader/nfcReader';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -27,6 +28,7 @@ import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
     AlertsPage,
     TabsPage,
     BinPage,
+    NFCReaderPage,
     AccountPage,
     QRScannerPage,
     NavigationDetailsPage
@@ -44,6 +46,7 @@ import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
     AlertsPage,
     AccountPage,
     BinPage,
+    NFCReaderPage,
     QRScannerPage,
     NavigationDetailsPage,
     TabsPage,
