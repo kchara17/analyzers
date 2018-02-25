@@ -1,5 +1,3 @@
-This app is for customers to find the best insurance for them.
-
 ## Installation Instructions
 
 Follow these instructions to install the app and run it with the mock (in-memory) data services:
