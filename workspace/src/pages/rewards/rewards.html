@@ -1,0 +1,24 @@
+<ion-header>
+        <ion-navbar>
+          <ion-title style = "text-align: left;">Rewards</ion-title>
+        </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card text-wrap *ngFor="let reward of rewards" style="background-color: rgb(69, 100, 185); margin-bottom: 20pt;">
+      <ion-card-header>
+        {{reward.name}}
+      </ion-card-header>
+    <ion-item>
+          <ion-label>{{reward.description}}</ion-label> 
+    </ion-item>
+    <div class="card" style="background-color: rgb(173, 173, 173)">
+        <div class="item item-text-wrap">
+          <div class="loader" [style.width]="pointsPercent">
+            <p class="percent">{{pointsPercent}}</p>
+          </div>
+        </div>
+      </div>
+     
+</ion-card>
+</ion-content>

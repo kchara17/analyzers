@@ -35,10 +35,10 @@ export class MyApp {
     }
 
     findAll() {
-        if (this.service.companies !== undefined) {
+        if (this.service.userInfo !== undefined) {
             return;
         }
-          this.service.getAllCompanies().subscribe(data => {
+          this.service.getUser().subscribe(data => {
               this.service.companies = data.json();
               }, error => {
                   this.doAlert("Error!",JSON.stringify(error));

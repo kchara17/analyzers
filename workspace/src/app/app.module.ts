@@ -4,7 +4,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import {AlertsPage} from "../pages/alerts/alerts";
+import {RewardsPage} from "../pages/rewards/rewards";
 import {AccountPage} from "../pages/account/account";
 import {NavigationDetailsPage} from "../pages/account/account";
 import {HomePage} from '../pages/home/home';
@@ -23,7 +23,7 @@ import { NFC, Ndef } from '@ionic-native/nfc';
   declarations: [
     MyApp,
     HomePage,
-    AlertsPage,
+    RewardsPage,
     TabsPage,
     BinPage,
     NFCReaderPage,
@@ -40,7 +40,7 @@ import { NFC, Ndef } from '@ionic-native/nfc';
   entryComponents: [
     MyApp,
     HomePage,
-    AlertsPage,
+    RewardsPage,
     AccountPage,
     BinPage,
     NFCReaderPage,
