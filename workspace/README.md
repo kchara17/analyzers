@@ -15,9 +15,9 @@ Follow these instructions to install the app and run it with the mock (in-memory
     git clone https://github.com/hackathon-cytasmartcity/Analyzers
     ```
 
-1. Navigate to the `Analyzers` directory :
+1. Navigate to the `Analyzers/workspace` directory :
     ```
-    cd Analyzers
+    cd Analyzers/workspace
     ```
 
 1. Install the dependencies
