@@ -1,7 +1,7 @@
 <?php
 class Database{
 	private $host = "localhost";
-	private $db_name = "smartcity";
+	private $db_name = "linkeddb";
 	private $username = "root";
 	private $password = "";
 	public $conn;

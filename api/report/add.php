@@ -1,6 +1,7 @@
 <?php
 
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: POST");
 
@@ -13,8 +14,9 @@ $data = json_decode(file_get_contents("php://input"));
 $binID = $data->binID;
 $userID = $data->userID;
 $problem = $data->problem;
-$date = $data->date;
+$date = date("Y-m-d h:i:s");
 $id=NULL;
+
 
 $query = "INSERT INTO report (reportID ,binID, userID, problem, date)
 				  VALUES (NULL, :binID, :userID, :problem, :date)";
