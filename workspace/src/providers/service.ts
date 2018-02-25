@@ -15,7 +15,7 @@ export class Service {
   }
 
   getBinInfo(id:string){
-    return this.http.get("http://ec2-34-216-222-53.us-west-2.compute.amazonaws.com/api/bin/readOne.php?id=1");
+    return this.http.get("http://ec2-34-216-222-53.us-west-2.compute.amazonaws.com/api/bin/readOne.php?id="+id);
   }
 
   postProblem(problem: string){

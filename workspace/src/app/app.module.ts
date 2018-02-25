@@ -19,7 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Service } from "../providers/service";
 
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
-
+import { NFC, Ndef } from '@ionic-native/nfc';
 @NgModule({
   declarations: [
     MyApp,
@@ -57,6 +57,8 @@ import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
     Service,
     QRScanner,
     Headers,
+    NFC,
+    Ndef,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
