@@ -15,10 +15,16 @@
     <div class="card" style="background-color: rgb(173, 173, 173)">
         <div class="item item-text-wrap">
           <div class="loader" [style.width]="pointsPercent">
-            <p class="percent">{{pointsPercent}}</p>
+            <p class="percent">{{this.service.userInfo.points}}/{{reward.requiredPoints}}</p>
           </div>
         </div>
       </div>
+      <ion-item>
+          <button ion-button block disabled>
+             Claim Reward
+          </button>
+          
+      </ion-item>
      
 </ion-card>
 </ion-content>

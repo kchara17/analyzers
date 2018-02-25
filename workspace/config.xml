@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.analyzers.sOrder" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>InSure</name>
+<widget id="com.analyzers.linked" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Linked</name>
     <description>Smart Order</description>
     <author email="kchara17@cs.ucy.ac.cy">Konstantinos Charalampous</author>
     <content src="index.html" />

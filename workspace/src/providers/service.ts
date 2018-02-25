@@ -9,10 +9,11 @@ export class Service {
   public id: string;
   public binInfo: Array<any>;
   public rewardsInfo: Array<any>;
+  public userInfo: Array<any>;
   constructor(public http: Http,public alertCtrl: AlertController) {}
 
-  getAllCompanies(){
-    return this.http.get("http://ec2-34-216-159-143.us-west-2.compute.amazonaws.com/html/api/company/read.php");
+  getUser(){
+    return this.http.get("http://ec2-34-216-222-53.us-west-2.compute.amazonaws.com/api/user/readPoints.php?id=1");
   }
 
   getBinInfo(id:string){

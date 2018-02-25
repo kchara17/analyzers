@@ -39,7 +39,7 @@ export class MyApp {
             return;
         }
           this.service.getUser().subscribe(data => {
-              this.service.companies = data.json();
+              this.service.userInfo = data.json();
               }, error => {
                   this.doAlert("Error!",JSON.stringify(error));
             });

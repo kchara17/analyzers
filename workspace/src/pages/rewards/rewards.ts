@@ -11,17 +11,13 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class RewardsPage {
   public rewards: Array<any>;
-  public pointsPercent: string;
+  public pointsPercent: String;
+  public pos: number;
   constructor(public navCtrl: NavController,
               public service: Service,
               public alertCtrl: AlertController) {
-               this.pointsPercent = "50%"
+               this.pointsPercent = "20%";
                this.getAllRewards();
-               this.updatePoints();
-    
-  }
-
-  updatePoints(){
     
   }
 
