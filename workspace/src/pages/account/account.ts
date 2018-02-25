@@ -44,19 +44,9 @@ export class AccountPage {
         }
       },
       {
-        'title': 'My Insurances',
-        'icon': 'document',
-        'description': 'The latest version of cascading stylesheets - the styling language of the web!'
-      },
-      {
-        'title': 'My Claims',
+        'title': 'History',
         'icon': 'filing',
         'description': 'The latest version of the web\'s markup language.'
-      },
-      {
-        'title': 'Contact insurance',
-        'icon': 'call',
-        'description': 'One of the most popular programming languages on the Web!'
       },
       {
         'title': 'Settings',

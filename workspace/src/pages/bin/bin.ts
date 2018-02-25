@@ -40,7 +40,7 @@ export class BinPage {
 }
 
 showBinInformation(){
-  this.doAlert("Success",this.serv.binInfo["type"]);
+  this.doAlert("Bin Type",this.serv.binInfo["type"]);
 }
 
 report(problem: string){
