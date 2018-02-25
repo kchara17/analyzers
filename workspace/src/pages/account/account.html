@@ -1,0 +1,14 @@
+<ion-header>
+        <ion-navbar>
+          <ion-title>My account</ion-title>
+        </ion-navbar>
+</ion-header>
+      
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-start>
+            <ion-icon [name]="item.icon" item-start></ion-icon>
+            {{ item.title }}
+        </button>
+    </ion-list>
+</ion-content>

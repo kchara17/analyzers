@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title  style = "text-align: left;">Linked</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content no-bounce>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <img src="assets/img/Logo.png">
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <button ion-button icon-only  color="secondary" style = "display: inline-block; width : 100%;" (click)="readNFC()">
+              Scan QR Code
+          </button>
+         </ion-col>
+       </ion-row>
+    <ion-row>
+        <ion-col text-center>
+          <button ion-button icon-only  color="secondary" style = "display: inline-block; width : 100%;" (click)="openAd()">
+              Read NFC tag
+          </button>
+         </ion-col>
+       </ion-row>
+    <ion-row>
+        <ion-col text-center>
+          <button ion-button icon-only  color="secondary" style = "display: inline-block; width : 100%;" (click)="openAd()">
+              Report / Give feedback
+          </button>
+         </ion-col>
+    </ion-row>
+    </ion-grid>
+    </ion-content>
+    
